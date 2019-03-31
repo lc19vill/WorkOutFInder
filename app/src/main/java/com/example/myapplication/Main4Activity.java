@@ -13,8 +13,8 @@ import android.widget.Toast;
 import static com.example.myapplication.MainActivity.WorkoutFinder;
 
 public class Main4Activity extends AppCompatActivity {
-    int timePeriod;
-    String email, intensity, name;
+    public static int timePeriod;
+    public String email, intensity, name;
 
 
     EditText nameInput;
@@ -44,11 +44,11 @@ public class Main4Activity extends AppCompatActivity {
                 intensity = intensityInput.getText().toString();
 
 
-                showText(name);
-                showText(email);
-                showText(String.valueOf(timePeriod));
-                showText(intensity);
-                showText(WorkoutFinder);
+//                showText(name);
+//                showText(email);
+//                showText(String.valueOf(timePeriod));
+//                showText(intensity);
+//                showText(WorkoutFinder);
 
                 openActivity5();
             }
