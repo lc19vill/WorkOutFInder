@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#FF7043">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -12,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="164dp"
+        android:layout_marginTop="247dp"
         android:orientation="vertical">
 
         <TextView
@@ -22,7 +23,8 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:text="WorkOut Inputs Here" />
+            android:text="WorkOut Inputs Here"
+            android:textColor="#FBE9E7" />
 
         <EditText
             android:id="@+id/name"

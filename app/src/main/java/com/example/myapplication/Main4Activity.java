@@ -49,11 +49,13 @@ public class Main4Activity extends AppCompatActivity {
                 showText(String.valueOf(timePeriod));
                 showText(intensity);
                 showText(WorkoutFinder);
+
+                openActivity5();
             }
         });
     }
 
-    public void showWorkout1(){
+    public void openActivity5(){
         Intent intent = new Intent(this,Main5Activity.class);
         startActivity(intent);
     }

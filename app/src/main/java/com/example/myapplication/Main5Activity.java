@@ -30,28 +30,7 @@ public class Main5Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main5);
 
-        nameInput = (EditText) findViewById(R.id.name2);
-        emailInput = (EditText) findViewById(R.id.email2);
-        timePeriodInput = (EditText) findViewById(R.id.timePeriod2);
-        intensityInput = (EditText) findViewById(R.id.intensity2);
 
-        submitButton = (Button) findViewById(R.id.submitButton2);
-        submitButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v){
-                name = nameInput.getText().toString();
-                timePeriod = Integer.valueOf(timePeriodInput.getText().toString());
-                email = emailInput.getText().toString();
-                intensity = intensityInput.getText().toString();
-
-
-                showText(name);
-                showText(email);
-                showText(String.valueOf(timePeriod));
-                showText(intensity);
-                showText(WorkoutFinder);
-            }
-        });
     }
 
     public void showWorkout1(){

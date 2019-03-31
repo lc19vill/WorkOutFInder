@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#FF7043">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -12,15 +13,17 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="193dp"
+        android:layout_marginTop="274dp"
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/activity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:text="Pick Program Option" />
+            android:text="Pick Program Option"
+            android:textColor="#FBE9E7"/>
 
         <Button
             android:id="@+id/button3"
