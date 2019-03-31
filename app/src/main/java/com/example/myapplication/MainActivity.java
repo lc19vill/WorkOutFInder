@@ -7,21 +7,38 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+    public static String WorkoutFinder;
+
     private Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button =(Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                openActivity2();
-            }
-        });
+        if ((button =findViewById(R.id.button)) != null){
+            button =findViewById(R.id.button);
+            WorkoutFinder = "QS";
+            button.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View v){
+                    openActivity1();
+                }
+            });
+        }
+        if ((button =findViewById(R.id.button2)) != null){
+            button =findViewById(R.id.button2);
+            WorkoutFinder = "P";
+            button.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View v){
+                    openActivity1();
+                }
+            });
+        }
+
+
     }
-    public void openActivity2(){
+    public void openActivity1(){
         Intent intent = new Intent(this,Main2Activity.class);
         startActivity(intent);
     }
