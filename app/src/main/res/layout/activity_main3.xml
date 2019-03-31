@@ -7,27 +7,43 @@
     tools:context=".Main3Activity">
 
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="306dp"
-        android:text="Never"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="247dp" />
-
-    <Button
-        android:id="@+id/button7"
+    <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="402dp"
-        android:text="Beginner"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="161dp" />
+        android:layout_marginTop="175dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Level of Experience" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Never"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Beginner"
+            tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button8"
@@ -35,34 +51,22 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="117dp"
         android:text="Intermediate"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="427dp" />
+        android:layout_marginTop="10dp"
+        tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="206dp"
-        android:text="Expert"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="522dp" />
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Expert"
+            tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="216dp"
-        android:layout_marginEnd="143dp"
-        android:layout_marginRight="143dp"
-        android:text="Level of Experience"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="88dp" />
+
+
+    </LinearLayout>
+
 </RelativeLayout>

@@ -14,8 +14,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        if ((button =findViewById(R.id.button)) != null){
+        if (((button =findViewById(R.id.button)) != null)){
             button =findViewById(R.id.button);
             WorkoutFinder = "QS";
             button.setOnClickListener(new View.OnClickListener(){
@@ -25,17 +24,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         }
-        if ((button =findViewById(R.id.button2)) != null){
-            button =findViewById(R.id.button2);
-            WorkoutFinder = "P";
-            button.setOnClickListener(new View.OnClickListener(){
-                @Override
-                public void onClick(View v){
-                    openActivity1();
-                }
-            });
-        }
-
 
     }
     public void openActivity1(){

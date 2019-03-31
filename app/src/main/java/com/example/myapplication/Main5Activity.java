@@ -10,9 +10,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
 import static com.example.myapplication.MainActivity.WorkoutFinder;
 
-public class Main4Activity extends AppCompatActivity {
+public class Main5Activity extends AppCompatActivity {
     int timePeriod;
     String email, intensity, name;
 
@@ -27,14 +28,14 @@ public class Main4Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main4);
+        setContentView(R.layout.activity_main5);
 
-        nameInput = (EditText) findViewById(R.id.name);
-        emailInput = (EditText) findViewById(R.id.email);
-        timePeriodInput = (EditText) findViewById(R.id.timePeriod);
-        intensityInput = (EditText) findViewById(R.id.intensity);
+        nameInput = (EditText) findViewById(R.id.name2);
+        emailInput = (EditText) findViewById(R.id.email2);
+        timePeriodInput = (EditText) findViewById(R.id.timePeriod2);
+        intensityInput = (EditText) findViewById(R.id.intensity2);
 
-        submitButton = (Button) findViewById(R.id.submitButton);
+        submitButton = (Button) findViewById(R.id.submitButton2);
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
@@ -59,6 +60,6 @@ public class Main4Activity extends AppCompatActivity {
     }
 
     public void showText(String text){
-        Toast.makeText(Main4Activity.this, text, Toast.LENGTH_SHORT).show();
+        Toast.makeText(Main5Activity.this, text, Toast.LENGTH_SHORT).show();
     }
 }
